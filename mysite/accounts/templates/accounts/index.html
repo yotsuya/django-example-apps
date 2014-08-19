@@ -1,0 +1,14 @@
+{% extends "accounts/base.html" %}
+
+{% block title %}アカウント管理トップ{% endblock %}
+
+{% block content %}
+
+  <h1>アカウント管理トップ</h1>
+
+  <ul class="nav">
+    <li><a href="{% url 'register' %}">新規登録</a></li>
+    <li><a href="{% url 'login' %}">ログイン</a></li>
+  </ul>
+
+{% endblock %}
