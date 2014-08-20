@@ -7,7 +7,6 @@
 <p>{% now "DATETIME_FORMAT" %}</p>
 
 <form method="post" action="{% url 'request_dump' %}">
-  {% csrf_token %}
   <label for="input_text"></label>
   <input type="text" id="input_text" name="input_text">
   <input type="submit" value="送信">
